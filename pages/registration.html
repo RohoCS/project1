@@ -5,48 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
+  <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
   <h1>Реєстрація</h1>
-  <ul>
-    <li><a href="../index.html">Головна</a></li>
-    <li><a href="articles.html">Статті</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="contacts.html">Контакти</a></li>
-    <li><a href="gallery.html">Галерея</a></li>
-    <li><a href="page-nav.html">Навігація</a></li>
-    <li><a href="registration.html">Реєстрація</a></li>
-  </ul>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="../index.html" class="headerlink">Головна</a></li>
+        <li><a href="articles.html" class="headerlink">Статті</a></li>
+        <li><a href="catalog.html" class="headerlink">Каталог</a></li>
+        <li><a href="contacts.html" class="headerlink">Контакти</a></li>
+        <li><a href="gallery.html" class="headerlink">Галерея</a></li>
+        <li><a href="page-nav.html" class="headerlink">Навігація</a></li>
+        <li><a href="registration.html" class="headerlink">Реєстрація</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
     <fieldset>
       <legend>Основні дані</legend>
-      <div>
+      <div class="form-group">
         <label for="surname">Прізвище</label>
         <input id="surname" name="surname" placeholder="Прізвище" type="text">
       </div>
-      <div>
+      <div class="form-group">
         <label for="name">Ім'я</label>
         <input id="name" name="name" placeholder="Ім'я" type="text">
       </div>
-      <div>
+      <div class="form-group">
         <label for="patronymic">По-батькові</label>
         <input id="patronymic" name="patronymic" placeholder="По-батькові" type="text">
       </div>
-      <div>
+      <div class="form-group">
         <label for="photo">Ваша фотографія</label>
         <input id="photo" name="photo" type="file">
       </div>
-      <div>
+      <div class="form-group">
         <label for="email">Ваша електронна пошта</label>
         <input id="email" name="email" type="email" placeholder="example1@mail.com">
       </div>
-      <div>
+      <div class="form-group">
         <label for="password">Вигадайте пароль</label>
         <input id="password" name="password" type="password" placeholder="Пароль">
       </div>
-      <div>
+      <div class="form-group">
         <label for="site">Адреса сайту</label>
         <input id="site" name="site" type="url" value="https://mysite.name">
       </div>
@@ -70,19 +75,33 @@
         <input id="date" name="date" type="date">
       </div>
     </fieldset>
+
     <fieldset>
       <legend>Єдиний вибір</legend>
+      <p>Вкажіть Вашу стать</p>
+      <div class="form-group-sm">
+        <input id="male" name="gender" type="radio" value="male">
+        <label for="male">Мужской</label>
+      </div>
+      <div class="form-group-sm">
+        <input id="female" name="gender" type="radio" value="female">
+        <label for="female">Женский</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Множинний вибір</legend>
       <div>
         <p>Оберіть улюблену кухню:</p>
-        <div>
+        <div class="form-group-sm">
           <input id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
           <label for="kitchen-ua">Українська</label>
         </div>
-        <div>
+        <div class="form-group-sm">
           <input id="kitchen-ch" name="kitchen" type="checkbox" value="ch">
           <label for="kitchen-ch">Китайська</label>
         </div>
-        <div>
+        <div class="form-group-sm">
           <input id="kitchen-it" name="kitchen" type="checkbox" value="ua">
           <label for="kitchen-it">Італійська</label>
         </div>
@@ -97,11 +116,11 @@
     </fieldset>
     <fieldset>
       <legend>Кнопки</legend>
-      <div>
-        <button type="submit">Зареєструватися</button>
+      <div class="form-group">
+        <button class="btn" type="submit">Зареєструватися</button>
       </div>
-      <div>
-        <button type="reset">Очистити форму</button>
+      <div class="form-group">
+        <button class="btn" type="reset">Очистити форму</button>
       </div>
     </fieldset>
   </form>

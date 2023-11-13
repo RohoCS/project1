@@ -5,34 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
+  <link rel="stylesheet" href="../style/style.css">
 </head>
 
-<body>
+<body class="gallery">
   <h1>Галерея</h1>
-  <ul>
-    <li><a href="../index.html">Головна</a></li>
-    <li><a href="articles.html">Статті</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="contacts.html">Контакти</a></li>
-    <li><a href="gallery.html">Галерея</a></li>
-    <li><a href="page-nav.html">Навігація</a></li>
-    <li><a href="registration.html">Реєстрація</a></li>
-  </ul>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="../index.html" class="headerlink">Головна</a></li>
+        <li><a href="articles.html" class="headerlink">Статті</a></li>
+        <li><a href="catalog.html" class="headerlink">Каталог</a></li>
+        <li><a href="contacts.html" class="headerlink">Контакти</a></li>
+        <li><a href="gallery.html" class="headerlink">Галерея</a></li>
+        <li><a href="page-nav.html" class="headerlink">Навігація</a></li>
+        <li><a href="registration.html" class="headerlink">Реєстрація</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div>
-    <div>
-      <a href="../img/firstpic.jpg" target="_blank">firstpic.jpg<img src="../img/firstpic.jpg" alt="first"
-          width="100"></a>
+  <main>
+    <div class="images">
+      <div class="image">
+        <figure>
+          <a href="../img/firstpic.jpg" target="_blank"><img src="../img/firstpic.jpg" alt="first" width="100"></a>
+          <figcaption>Квіти</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="image">
+          <a href="../img/secondpic.jpg" target="_blank"><img src="../img/secondpic.jpg" alt="second" width="200"> </a>
+          <figcaption>Jpeg</figcaption>
+        </figure>
+      </div>
+      <div>
+        <figure class="image">
+          <a href="../img/thirdpic.png" target="_blank"><img src="../img/thirdpic.png" alt="third" width="100"></a>
+          <figcaption>Ghost</figcaption>
+        </figure>
+      </div>
     </div>
-    <div>
-      <a href="../img/secondpic.jpg" target="_blank">secondpic.jpg<img src="../img/secondpic.jpg" alt="second"
-          width="200"> </a>
-    </div>
-    <div>
-      <a href="../img/thirdpic.png" target="_blank">thirdpic.png<img src="../img/thirdpic.png" alt="third"
-          width="100"></a>
-    </div>
-  </div>
+  </main>
 
   <footer>
     <p>&#169; Охотніченко Руслан</p>

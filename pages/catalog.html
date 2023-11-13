@@ -5,41 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog</title>
+  <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
   <h1>Каталог</h1>
-  <ul>
-    <li><a href="../index.html">Головна</a></li>
-    <li><a href="articles.html">Статті</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="contacts.html">Контакти</a></li>
-    <li><a href="gallery.html">Галерея</a></li>
-    <li><a href="page-nav.html">Навігація</a></li>
-    <li><a href="registration.html">Реєстрація</a></li>
-  </ul>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li><a href="../index.html" class="headerlink">Головна</a></li>
+        <li><a href="articles.html" class="headerlink">Статті</a></li>
+        <li><a href="catalog.html" class="headerlink">Каталог</a></li>
+        <li><a href="contacts.html" class="headerlink">Контакти</a></li>
+        <li><a href="gallery.html" class="headerlink">Галерея</a></li>
+        <li><a href="page-nav.html" class="headerlink">Навігація</a></li>
+        <li><a href="registration.html" class="headerlink">Реєстрація</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <ul>
-    <li>Квіти
-      <ul>
-        <li>Живі квіти</li>
-        <li>Штучні квіти</li>
-      </ul>
-    </li>
-    <li>Іграшки
-      <ul>
-        <li>М'які іграшки</li>
-        <li>Конструктори</li>
-      </ul>
-    </li>
-    <li>Книги
-      <ul>
-        <li>Аудіокниги</li>
-        <li>Книги в м'якій палітурці</li>
-      </ul>
-    </li>
-  </ul>
-
+  <div class="container">
+    <ul class="catalog">
+      <li class="category">Квіти
+        <ul class="subcateg">
+          <li>Живі квіти</li>
+          <li class="new">Штучні квіти</li>
+        </ul>
+      </li>
+      <li class="category">Іграшки
+        <ul class="subcateg">
+          <li>М'які іграшки</li>
+          <li class="new">Конструктори</li>
+        </ul>
+      </li>
+      <li class="category">Книги
+        <ul class="subcateg">
+          <li>Аудіокниги</li>
+          <li class="new">Книги в м'якій палітурці</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <footer>
     <p>&#169; Охотніченко Руслан</p>
   </footer>
