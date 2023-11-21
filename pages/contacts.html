@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <h1>Контакти</h1>
   <header>
     <nav>
       <ul class="nav">
@@ -24,42 +23,51 @@
     </nav>
   </header>
 
-  <div>
-    <p>Адреса: м.Одеса, вул. Торгова, 25</p>
-  </div>
-  <div>
-    <img src="../img/map.png" alt="map" width="700">
-  </div>
-  <form action="https://tests.fomenko.top/echo/index.php" method="get">
-    <fieldset>
-      <legend>Контактні дані</legend>
-      <div>
-        <label for="name">Ім'я</label>
-        <input id="name" name="name" placeholder="Ім'я" type="text">
+  <main class="container">
+    <div>
+      <div class="h1container">
+        <h1>Контакти</h1>
       </div>
       <div>
-        <label for="phone">Номер телефону</label>
-        <input id="phone" name="phone" placeholder="Номер" type="number">
+        <figure class="map_container">
+          <figcaption class="address">Адреса: м.Одеса, вул. Торгова, 25</figcaption>
+          <img src="../img/map.png" alt="map" class="map" width="700">
+        </figure>
       </div>
-      <div>
-        <label for="email">Пошта</label>
-        <input id="email" name="email" placeholder="example@mail.com" type="email">
-      </div>
-      <div>
-        <label for="txt-q">Задайте питання</label>
-        <textarea id="txt-q" name="txt-q" cols="25" rows="10"></textarea>
-      </div>
-      <div>
-        <button type="submit">Відіслати форму</button>
-      </div>
-      <div>
-        <button type="reset">Очистити форму</button>
-      </div>
-    </fieldset>
-  </form>
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+          <legend>Контактні дані</legend>
+          <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input id="name" name="name" placeholder="Ім'я" type="text">
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефону</label>
+            <input id="phone" name="phone" placeholder="Номер" type="number">
+          </div>
+          <div class="form-group">
+            <label for="email">Пошта</label>
+            <input id="email" name="email" placeholder="example@mail.com" type="email">
+          </div>
+          <div>
+            <label for="txt-q">Задайте питання</label>
+            <textarea id="txt-q" name="txt-q" cols="25" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="submit">Зареєструватися</button>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="reset">Очистити форму</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
   <footer>
-    <p>&#169; Охотніченко Руслан</p>
+    <div class="footertext">&#169; Охотніченко Руслан</div>
   </footer>
+
 </body>
 
 </html>

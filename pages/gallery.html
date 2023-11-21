@@ -9,7 +9,6 @@
 </head>
 
 <body class="gallery">
-  <h1>Галерея</h1>
   <header>
     <nav>
       <ul class="nav">
@@ -24,23 +23,28 @@
     </nav>
   </header>
 
-  <main>
-    <div class="images">
-      <div class="image">
+
+  <main class="container">
+    <div class="h1container">
+      <h1>Галерея</h1>
+    </div>
+    <div class="gallerycontainer">
+      <div class="imagecontainer">
         <figure>
-          <a href="../img/firstpic.jpg" target="_blank"><img src="../img/firstpic.jpg" alt="first" width="100"></a>
+          <a href="../img/firstpic.jpg" target="_blank"><img src="../img/firstpic.jpg" class="image" alt="first" width="100"></a>
           <figcaption>Квіти</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="image">
-          <a href="../img/secondpic.jpg" target="_blank"><img src="../img/secondpic.jpg" alt="second" width="200"> </a>
+      <div class="imagecontainer">
+        <figure>
+          <a href="../img/secondpic.jpg" target="_blank"><img src="../img/secondpic.jpg" class="image" alt="second"
+              width="200"> </a>
           <figcaption>Jpeg</figcaption>
         </figure>
       </div>
-      <div>
-        <figure class="image">
-          <a href="../img/thirdpic.png" target="_blank"><img src="../img/thirdpic.png" alt="third" width="100"></a>
+      <div class="imagecontainer">
+        <figure>
+          <a href="../img/thirdpic.png" target="_blank"><img src="../img/thirdpic.png" class="image" alt="third" width="100"></a>
           <figcaption>Ghost</figcaption>
         </figure>
       </div>
@@ -48,8 +52,9 @@
   </main>
 
   <footer>
-    <p>&#169; Охотніченко Руслан</p>
+    <div class="footertext">&#169; Охотніченко Руслан</div>
   </footer>
+
 </body>
 
 </html>

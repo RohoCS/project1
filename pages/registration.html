@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <h1>Реєстрація</h1>
   <header>
     <nav>
       <ul class="nav">
@@ -24,109 +23,118 @@
     </nav>
   </header>
 
-  <form action="https://tests.fomenko.top/echo/index.php" method="get">
-    <fieldset>
-      <legend>Основні дані</legend>
-      <div class="form-group">
-        <label for="surname">Прізвище</label>
-        <input id="surname" name="surname" placeholder="Прізвище" type="text">
-      </div>
-      <div class="form-group">
-        <label for="name">Ім'я</label>
-        <input id="name" name="name" placeholder="Ім'я" type="text">
-      </div>
-      <div class="form-group">
-        <label for="patronymic">По-батькові</label>
-        <input id="patronymic" name="patronymic" placeholder="По-батькові" type="text">
-      </div>
-      <div class="form-group">
-        <label for="photo">Ваша фотографія</label>
-        <input id="photo" name="photo" type="file">
-      </div>
-      <div class="form-group">
-        <label for="email">Ваша електронна пошта</label>
-        <input id="email" name="email" type="email" placeholder="example1@mail.com">
-      </div>
-      <div class="form-group">
-        <label for="password">Вигадайте пароль</label>
-        <input id="password" name="password" type="password" placeholder="Пароль">
-      </div>
-      <div class="form-group">
-        <label for="site">Адреса сайту</label>
-        <input id="site" name="site" type="url" value="https://mysite.name">
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Список</legend>
-      <div>
-        <label for="sex">Оберіть стать</label>
-        <select id="sex" name="sex">
-          <option value="0">Оберіть</option>
-          <option value="1">Чоловік</option>
-          <option value="2">Жінка</option>
-          <option value="3">Інше</option>
-        </select>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Дата</legend>
-      <div>
-        <label for="date">Оберіть дату народження</label>
-        <input id="date" name="date" type="date">
-      </div>
-    </fieldset>
 
-    <fieldset>
-      <legend>Єдиний вибір</legend>
-      <p>Вкажіть Вашу стать</p>
-      <div class="form-group-sm">
-        <input id="male" name="gender" type="radio" value="male">
-        <label for="male">Мужской</label>
+  <main class="container">
+    <div>
+      <div class="h1container">
+        <h1>Реєстрація</h1>
       </div>
-      <div class="form-group-sm">
-        <input id="female" name="gender" type="radio" value="female">
-        <label for="female">Женский</label>
-      </div>
-    </fieldset>
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+          <legend>Основні дані</legend>
+          <div class="form-group">
+            <label for="surname">Прізвище</label>
+            <input id="surname" name="surname" placeholder="Прізвище" type="text">
+          </div>
+          <div class="form-group">
+            <label for="name">Ім'я</label>
+            <input id="name" name="name" placeholder="Ім'я" type="text">
+          </div>
+          <div class="form-group">
+            <label for="patronymic">По-батькові</label>
+            <input id="patronymic" name="patronymic" placeholder="По-батькові" type="text">
+          </div>
+          <div class="form-group">
+            <label for="photo">Ваша фотографія</label>
+            <input id="photo" name="photo" type="file">
+          </div>
+          <div class="form-group">
+            <label for="email">Ваша електронна пошта</label>
+            <input id="email" name="email" type="email" placeholder="example1@mail.com">
+          </div>
+          <div class="form-group">
+            <label for="password">Вигадайте пароль</label>
+            <input id="password" name="password" type="password" placeholder="Пароль">
+          </div>
+          <div class="form-group">
+            <label for="site">Адреса сайту</label>
+            <input id="site" name="site" type="url" value="https://mysite.name">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Список</legend>
+          <div>
+            <label for="sex">Оберіть стать</label>
+            <select id="sex" name="sex">
+              <option value="0">Оберіть</option>
+              <option value="1">Чоловік</option>
+              <option value="2">Жінка</option>
+              <option value="3">Інше</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Дата</legend>
+          <div>
+            <label for="date">Оберіть дату народження</label>
+            <input id="date" name="date" type="date">
+          </div>
+        </fieldset>
 
-    <fieldset>
-      <legend>Множинний вибір</legend>
-      <div>
-        <p>Оберіть улюблену кухню:</p>
-        <div class="form-group-sm">
-          <input id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
-          <label for="kitchen-ua">Українська</label>
-        </div>
-        <div class="form-group-sm">
-          <input id="kitchen-ch" name="kitchen" type="checkbox" value="ch">
-          <label for="kitchen-ch">Китайська</label>
-        </div>
-        <div class="form-group-sm">
-          <input id="kitchen-it" name="kitchen" type="checkbox" value="ua">
-          <label for="kitchen-it">Італійська</label>
-        </div>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Текст</legend>
-      <div>
-        <label for="describe">Опишіть себе</label>
-        <textarea cols="40" rows="7" id="describe" name="describe" placeholder="Введіть інформацію про себе"></textarea>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Кнопки</legend>
-      <div class="form-group">
-        <button class="btn" type="submit">Зареєструватися</button>
-      </div>
-      <div class="form-group">
-        <button class="btn" type="reset">Очистити форму</button>
-      </div>
-    </fieldset>
-  </form>
+        <fieldset>
+          <legend>Єдиний вибір</legend>
+          <p>Вкажіть Вашу стать</p>
+          <div class="form-group-sm">
+            <input id="male" name="gender" type="radio" value="male">
+            <label for="male">Мужской</label>
+          </div>
+          <div class="form-group-sm">
+            <input id="female" name="gender" type="radio" value="female">
+            <label for="female">Женский</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Множинний вибір</legend>
+          <div>
+            <p>Оберіть улюблену кухню:</p>
+            <div class="form-group-sm">
+              <input id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
+              <label for="kitchen-ua">Українська</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kitchen-ch" name="kitchen" type="checkbox" value="ch">
+              <label for="kitchen-ch">Китайська</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kitchen-it" name="kitchen" type="checkbox" value="ua">
+              <label for="kitchen-it">Італійська</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Текст</legend>
+          <div>
+            <label for="describe">Опишіть себе</label>
+            <textarea cols="40" rows="7" id="describe" name="describe"
+              placeholder="Введіть інформацію про себе"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Кнопки</legend>
+          <div class="form-group">
+            <button class="btn" type="submit">Зареєструватися</button>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="reset">Очистити форму</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
 
   <footer>
-    <p>&#169; Охотніченко Руслан</p>
+    <div class="footertext">&#169; Охотніченко Руслан</div>
   </footer>
 </body>
 
