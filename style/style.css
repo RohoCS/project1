@@ -20,7 +20,7 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-.h1container{
+.h1container {
   padding: 7px;
   text-align: center;
 }
@@ -30,15 +30,21 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-.navbar-item {
-  display: inline;
-  padding: 0px 8px;
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;
 }
 .navbar-link {
+  display: block;
   color: #ddc5a2;
+  transition: 0.5s;
 }
 .navbar-link:hover {
   color: #947540;
+  transform: scale(1.1);
 }
 
 /* main */
@@ -62,7 +68,6 @@ footer {
   color: #ddc5a2;
   text-align: center;
 }
-
 
 /* articles */
 .titlelink {
@@ -192,4 +197,52 @@ textarea {
 /* contacts */
 .address {
   padding: 8px 0px;
+}
+
+/* table */
+.tablecaption {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+table {
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.table1 {
+  width: 75%;
+}
+td {
+  border: 2px solid black;
+  height: 50px;
+  width: 33.333%;
+  text-align: center;
+}
+.span2 {
+  height: 200px;
+}
+
+.table2 {
+  width: 90%;
+}
+.body3 {
+  width: 60%;
+}
+.body4 {
+  width: 28%;
+}
+
+.table3 {
+  width: 80%;
+}
+.backbody {
+  text-align: center;
+  padding: 10px;
+}
+.backlink {
+  color: #b6452c;
+  transition: 0.5s;
+}
+.backlink:hover {
+  color: #ffa577;
 }
